@@ -63,13 +63,13 @@
        fill="#9AA8BC">PHP 8</tspan><tspan fill="#6C7A8E">  /  </tspan><tspan fill="#7C5CFF">Unity</tspan>
     </text>
 
-    <g class="rev" style="animation-delay:.32s" transform="translate(76,286)">
+    <g transform="translate(76,286)"><g class="rev" style="animation-delay:.32s">
       <circle class="blink" cx="5" cy="-4" r="4.5" fill="#2FD97B"/>
       <text x="20" y="0" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="12" fill="#6C7A8E" letter-spacing="1.5">
         SAHADA ÇALIŞAN SİSTEMLER &#160;—&#160; PROTOTİP DEĞİL</text>
-    </g>
+    </g></g>
 
-    <g class="rev" style="animation-delay:.4s" transform="translate(872,60)">
+    <g transform="translate(872,60)"><g class="rev" style="animation-delay:.4s">
       <rect x="0" y="0" width="264" height="212" rx="10" fill="#0A0E16" stroke="#1C2434" stroke-width="1"/>
       <rect x="0" y="0" width="264" height="2" rx="1" fill="url(#edge)" opacity="0.9"/>
       <text x="22" y="38" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="10.5" fill="#6C7A8E" letter-spacing="2.4">ÖLÇÜMLER</text>
@@ -93,7 +93,7 @@
               fill="#EDF1F7" text-anchor="end">20</text>
         <line x1="22" y1="182" x2="242" y2="182" stroke="#1C2434" stroke-width="1"/>
       </g>
-    </g>
+    </g></g>
 
     <rect x="0" y="328" width="1200" height="2" fill="url(#edge)" opacity="0.45"/>
   </g>
