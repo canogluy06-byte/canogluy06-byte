@@ -103,17 +103,24 @@ Idle oyun prototipi. Arayüzün tamamı Inspector'da değil, **çalışma zaman�
 ## 📊 İstatistikler
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=canogluy06-byte&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F59E0B&icon_color=512BD4&count_private=true" alt="stats"/>
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=canogluy06-byte&layout=compact&theme=tokyonight&hide_border=true&bg_color=0D1117&title_color=F59E0B&langs_count=8" alt="langs"/>
+  <img src="https://img.shields.io/github/followers/canogluy06-byte?style=for-the-badge&logo=github&label=Takip%C3%A7i&color=F59E0B&labelColor=0D1117"/>
+  <img src="https://img.shields.io/badge/Depo-9-512BD4?style=for-the-badge&logo=github&labelColor=0D1117"/>
+  <img src="https://img.shields.io/badge/Ana%20dil-C%23-239120?style=for-the-badge&logo=csharp&labelColor=0D1117"/>
 </p>
 
 <p align="center">
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=canogluy06-byte&theme=tokyonight&hide_border=true&background=0D1117&ring=F59E0B&fire=F59E0B&currStreakLabel=F59E0B" alt="streak"/>
 </p>
 
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=canogluy06-byte&theme=tokyonight&no-frame=true&no-bg=true&column=7&margin-w=8" alt="trophy"/>
-</p>
+### Hangi teknolojiyi nerede kullandım
+
+| Teknoloji | Kullandığım proje |
+|---|---|
+| **C# / .NET 10** · Clean Architecture · EF Core · JWT | [ERP Suite](https://github.com/canogluy06-byte/dotnet-erp-clean-architecture) |
+| **C# / .NET 8** · WinForms · SQLite · custom `OnPaint` | [Finans Takip](https://github.com/canogluy06-byte/winforms-finance-tracker) · [Stok & Ön Muhasebe](https://github.com/canogluy06-byte/csharp-stock-inventory) |
+| **PHP 8** · MySQL · PDO · Leaflet · PWA | [Nearby](https://github.com/canogluy06-byte/php-venue-discovery-pwa) · [Kurumsal Site](https://github.com/canogluy06-byte/php-corporate-website) · [Blog CMS](https://github.com/canogluy06-byte/php-blog-cms) |
+| **JavaScript** · Node.js · service worker · Capacitor | [CV Üretici](https://github.com/canogluy06-byte/job-application-tracker) · [Nearby mobil](https://github.com/canogluy06-byte/php-venue-discovery-pwa/tree/main/mobile) |
+| **Unity · C#** · runtime UI generation | [Idle Music Game](https://github.com/canogluy06-byte/unity-idle-music-game) |
 
 ---
 
