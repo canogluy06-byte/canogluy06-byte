@@ -1,7 +1,7 @@
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="assets/hero-dark.svg?v=2">
-  <source media="(prefers-color-scheme: light)" srcset="assets/hero-light.svg?v=2">
-  <img src="assets/hero-dark.svg?v=2" alt="Yunus Emre Canoğlu — Kurumsal iş yazılımı · Backend, masaüstü ve saha sistemleri" width="100%">
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/profile-hero-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/profile-hero-light.svg">
+  <img src="assets/profile-hero-dark.svg" alt="Yunus Emre Canoğlu — Kurumsal iş yazılımı · Backend, masaüstü ve saha sistemleri" width="100%">
 </picture>
 
 <p align="center">
@@ -93,9 +93,9 @@ Idle oyun prototipi. Arayüzün tamamı Inspector'da sürüklenerek değil, **ç
 Yetkinlik listesi yerine **kanıt tablosu**: her satırın hangi sistemde fiilen uygulandığı.
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="assets/matrix-dark.svg?v=2">
-  <source media="(prefers-color-scheme: light)" srcset="assets/matrix-light.svg?v=2">
-  <img src="assets/matrix-dark.svg?v=2" alt="Yetkinlik ve sistem matrisi" width="100%">
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/profile-matrix-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/profile-matrix-light.svg">
+  <img src="assets/profile-matrix-dark.svg" alt="Yetkinlik ve sistem matrisi" width="100%">
 </picture>
 
 <br/>
@@ -103,9 +103,9 @@ Yetkinlik listesi yerine **kanıt tablosu**: her satırın hangi sistemde fiilen
 ## Mimari
 
 <picture>
-  <source media="(prefers-color-scheme: dark)"  srcset="assets/systems-dark.svg?v=2">
-  <source media="(prefers-color-scheme: light)" srcset="assets/systems-light.svg?v=2">
-  <img src="assets/systems-dark.svg?v=2" alt="Sistem mimarisi: tek API, üç istemci" width="100%">
+  <source media="(prefers-color-scheme: dark)"  srcset="assets/profile-systems-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="assets/profile-systems-light.svg">
+  <img src="assets/profile-systems-dark.svg" alt="Sistem mimarisi: tek API, üç istemci" width="100%">
 </picture>
 
 Bağımlılıklar içeri doğru akar: `Domain` veritabanını, web çatısını veya arayüzü tanımaz. Pratik kazancı şu — puantaj hesabı değiştiğinde masaüstü, mobil ve tarayıcı **aynı anda** doğru davranır; üç ayrı yerde düzeltme yapılmaz.
