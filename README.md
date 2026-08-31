@@ -163,7 +163,7 @@ Idle oyun prototipi. Arayüzün tamamı Inspector'da sürüklenerek değil, **ç
 <p align="center">
   <a href="mailto:canogluy06@gmail.com"><img src="https://img.shields.io/badge/E--posta-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117"/></a>
   <a href="https://github.com/canogluy06-byte?tab=repositories"><img src="https://img.shields.io/badge/Tüm_Depolar-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117"/></a>
-  <img src="https://img.shields.io/github/followers/canogluy06-byte?style=for-the-badge&logo=github&label=Takipçi&color=512BD4&labelColor=0D1117"/>
+  <img src="https://img.shields.io/github/followers/canogluy06-byte?style=for-the-badge&logo=github&label=Takip%C3%A7i&color=512BD4&labelColor=0D1117"/>
   <img src="https://komarev.com/ghpvc/?username=canogluy06-byte&label=Görüntülenme&color=F59E0B&style=for-the-badge"/>
 </p>
 
