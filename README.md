@@ -1,140 +1,172 @@
-<!-- ══════════════════ ÜST BANNER ══════════════════ -->
 <p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:512BD4,50:7B4AE2,100:F59E0B&height=190&section=header&text=Yunus%20Emre%20Cano%C4%9Flu&fontSize=42&fontColor=ffffff&fontAlignY=32&desc=Backend%20%26%20Desktop%20Developer%20%C2%B7%20C%23%20%2F%20.NET%20%C2%B7%20PHP&descSize=16&descAlignY=53" width="100%" alt="banner"/>
+  <img src="assets/hero.svg" width="100%" alt="Yunus Emre Canoğlu — Backend &amp; Desktop Systems Developer"/>
 </p>
 
 <p align="center">
-  <a href="https://github.com/canogluy06-byte">
-    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=F59E0B&center=true&vCenter=true&width=620&lines=Sahada+%C3%A7al%C4%B1%C5%9Fan+sistemler+yaz%C4%B1yorum.;Clean+Architecture+%C2%B7+.NET+10+%C2%B7+PostgreSQL;Prototip+de%C4%9Fil%2C+her+g%C3%BCn+kullan%C4%B1lan+yaz%C4%B1l%C4%B1m." alt="typing"/>
-  </a>
-</p>
-
-<p align="center">
-  <img src="https://komarev.com/ghpvc/?username=canogluy06-byte&label=Profil%20g%C3%B6r%C3%BCnt%C3%BClenme&color=F59E0B&style=flat-square" alt="views"/>
+  <a href="#öne-çıkan-sistemler"><img src="https://img.shields.io/badge/SİSTEMLER-0D1117?style=for-the-badge&labelColor=0D1117&color=512BD4"/></a>
+  <a href="#mimari-yaklaşım"><img src="https://img.shields.io/badge/MİMARİ-0D1117?style=for-the-badge&labelColor=0D1117&color=7C5CFF"/></a>
+  <a href="#teknoloji-yetkinliği"><img src="https://img.shields.io/badge/TEKNOLOJİ-0D1117?style=for-the-badge&labelColor=0D1117&color=F59E0B"/></a>
+  <a href="#i̇letişim"><img src="https://img.shields.io/badge/İLETİŞİM-0D1117?style=for-the-badge&labelColor=0D1117&color=22C55E"/></a>
 </p>
 
 ---
 
-## 👋 Merhaba
+## Profil
 
-Tekirdağ Namık Kemal Üniversitesi **Bilgisayar Programcılığı** öğrencisiyim. İlgimi çeken kısım demo yapmak değil, **gerçekten kullanılan** yazılım yazmak: yazdığım ERP sistemi bir mühendislik firmasında her gün ~10 istemciyle çalışıyor; sunucu kurulumunu, ağ yapılandırmasını ve yedekleme planını da ben yaptım.
+Kurumsal iş yazılımı geliştiriyorum. Odağım demo veya prototip değil, **üretimde çalışan, bakımı yapılan ve gerçek kullanıcısı olan** sistemler.
 
-- 🏗️ Şu an: **.NET 10 + Clean Architecture** ile katmanlı sistemler
-- 🌍 Yayında: konum tabanlı mekân keşif platformu (PWA + Capacitor)
-- 🏆 **TEKMER Özel Ödülü** — OSTİMTech Ar-Ge ve İnovasyon Proje Pazarı II
-- 💼 30 iş günü staj — katmanlı mimari, parametreli sorgular, Git ve dokümantasyon
-- 📫 İletişim: aşağıdaki rozetlerden
+Geliştirdiğim ERP bir mühendislik firmasında yaklaşık **10 istemciyle her gün** kullanılıyor; uygulamanın yanı sıra merkez sunucu kurulumunu, ağ yapılandırmasını, yedekleme stratejisini ve saha dağıtımını da ben yürüttüm. Yazılımın yalnızca kodlanan değil, **işletilen** bir şey olduğunu bu süreçte öğrendim.
 
----
-
-## 🛠️ Kullandığım teknolojiler
-
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=cs,dotnet,php,js,mysql,postgres,unity,git,github,vscode,visualstudio,html,css,nodejs&perline=7" alt="stack"/>
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Clean%20Architecture-512BD4?style=for-the-badge&logoColor=white"/>
-  <img src="https://img.shields.io/badge/EF%20Core-512BD4?style=for-the-badge&logo=dotnet&logoColor=white"/>
-  <img src="https://img.shields.io/badge/JWT%20Auth-000000?style=for-the-badge&logo=jsonwebtokens&logoColor=white"/>
-  <img src="https://img.shields.io/badge/WinForms-0078D4?style=for-the-badge&logo=windows&logoColor=white"/>
-  <img src="https://img.shields.io/badge/PWA-5A0FC8?style=for-the-badge&logo=pwa&logoColor=white"/>
-  <img src="https://img.shields.io/badge/Leaflet-199900?style=for-the-badge&logo=leaflet&logoColor=white"/>
-</p>
+<table>
+<tr>
+<td align="center" width="25%"><b>8</b><br/><sub>yayınlanan sistem</sub></td>
+<td align="center" width="25%"><b>~10</b><br/><sub>günlük aktif istemci</sub></td>
+<td align="center" width="25%"><b>3</b><br/><sub>istemci tipi, tek API</sub></td>
+<td align="center" width="25%"><b>30</b><br/><sub>iş günü kurumsal staj</sub></td>
+</tr>
+</table>
 
 ---
 
-## 🚀 Öne çıkan projeler
+## Mimari yaklaşım
+
+Bağımlılıklar içeri doğru akar. İş kuralları veritabanını, web çatısını veya arayüzü tanımaz; bu sayede aynı domain üç farklı istemciyi besleyebiliyor.
+
+```mermaid
+flowchart TD
+    subgraph Clients["İstemci Katmanı"]
+        A["WinForms<br/>Masaüstü"]
+        B["PWA<br/>Mobil"]
+        C["Tarayıcı"]
+    end
+
+    A --> API
+    B --> API
+    C --> API
+
+    subgraph Backend["Sunucu"]
+        API["ASP.NET Core API<br/><i>20 REST controller</i>"]
+        APP["Application<br/><i>DTO · use-case sözleşmeleri</i>"]
+        INF["Infrastructure<br/><i>EF Core · JWT · BCrypt</i>"]
+        DOM["Domain<br/><i>20 entity · sıfır bağımlılık</i>"]
+    end
+
+    API --> APP
+    APP --> DOM
+    INF --> DOM
+    API -.->|DI| INF
+    INF --> DB[("PostgreSQL")]
+
+    classDef core fill:#512BD4,stroke:#7C5CFF,color:#fff,stroke-width:2px
+    classDef infra fill:#0D1424,stroke:#43506B,color:#B9C4D6
+    classDef client fill:#F59E0B,stroke:#F59E0B,color:#1a1a1a
+    class DOM,APP core
+    class API,INF,DB infra
+    class A,B,C client
+```
+
+**Bu yapının pratik kazancı:** iş kuralı tek yerde durur. Puantaj hesabı değiştiğinde masaüstü, mobil ve tarayıcı aynı anda doğru davranır — üç ayrı yerde düzeltme yapılmaz.
+
+---
+
+## Öne çıkan sistemler
 
 <table>
 <tr>
 <td width="50%" valign="top">
 
-### 🏢 [ERP Suite](https://github.com/canogluy06-byte/dotnet-erp-clean-architecture)
-**.NET 10 · Clean Architecture · PostgreSQL**
+### [ERP Suite](https://github.com/canogluy06-byte/dotnet-erp-clean-architecture)
+`.NET 10` `Clean Architecture` `PostgreSQL` `JWT`
 
-Şantiye yönetimi için uçtan uca ERP. Tek API — üç istemci: REST servis, WinForms masaüstü ve kurulabilir PWA.
+Şantiye yönetimi için uçtan uca kurumsal sistem. Tek API üç istemciyi besler: REST servis, WinForms masaüstü ve kurulabilir PWA.
 
-`20 entity` · `20 controller` · `24 ekran`
+**20** entity · **20** controller · **24** masaüstü ekranı
 
-Puantaj, malzeme talep akışı, fiyat listesi, depo, rol bazlı yetkilendirme.
+Puantaj ve hakediş, malzeme talep onay akışı, fiyat listesi, depo, rol bazlı yetkilendirme, anlık mesajlaşma.
 
 </td>
 <td width="50%" valign="top">
 
-### 📍 [Nearby — Venue Discovery](https://github.com/canogluy06-byte/php-venue-discovery-pwa)
-**PHP · MySQL · Leaflet · Capacitor**
+### [Nearby — Venue Discovery](https://github.com/canogluy06-byte/php-venue-discovery-pwa)
+`PHP 8` `MySQL` `Leaflet` `Capacitor`
 
-Konum tabanlı mekân keşif platformu. OpenStreetMap/Overpass'tan beslenen, viewport bazlı yükleme yapan harita.
+Konum tabanlı mekân keşif platformu. Viewport bazlı yükleme yapan harita; veri OpenStreetMap/Overpass'tan otomatik besleniyor.
 
-Check-in, yorum, favori, liderlik tablosu ve işletme paneli.
+Check-in, değerlendirme, favori, liderlik tablosu, işletme sahibi paneli ve moderasyon.
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### 💰 [Finans Takip](https://github.com/canogluy06-byte/winforms-finance-tracker)
-**.NET 8 · WinForms · SQLite**
+### [Finans Takip](https://github.com/canogluy06-byte/winforms-finance-tracker)
+`.NET 8` `WinForms` `SQLite`
 
-Çek/senet vade takvimi. Elle çizilmiş `OnPaint` kontrolleri, bildirim sistemi, arşiv ve zamanlanmış otomatik yedekleme.
+Çek/senet vade takvimi. Takvim hücreleri ve bildirim bileşenleri hazır kontrol değil, kendi `OnPaint` uygulamalarıyla çizildi — DPI değişiminde tutarlı kalır.
+
+Arşiv, vade bildirimleri, zamanlanmış otomatik yedekleme.
 
 </td>
 <td width="50%" valign="top">
 
-### 🎮 [Idle Music Game](https://github.com/canogluy06-byte/unity-idle-music-game)
-**Unity · C#**
+### [Idle Music Game](https://github.com/canogluy06-byte/unity-idle-music-game)
+`Unity` `C#`
 
-Idle oyun prototipi. Arayüzün tamamı Inspector'da değil, **çalışma zamanında C# ile** üretiliyor — layout diff'te okunabilir kalıyor.
+Idle oyun prototipi. Arayüzün tamamı Inspector'da sürüklenerek değil, **çalışma zamanında C# ile** kuruluyor; böylece layout diff'te okunabilir ve kaynaktan birebir yeniden üretilebilir kalıyor.
 
 </td>
 </tr>
 </table>
 
 <p align="center">
-  <a href="https://github.com/canogluy06-byte/php-blog-cms"><img src="https://img.shields.io/badge/📝_Flat--File_Blog_CMS-777BB4?style=flat-square"/></a>
-  <a href="https://github.com/canogluy06-byte/csharp-stock-inventory"><img src="https://img.shields.io/badge/📦_Stok_%26_Ön_Muhasebe-239120?style=flat-square"/></a>
-  <a href="https://github.com/canogluy06-byte/job-application-tracker"><img src="https://img.shields.io/badge/📄_CV_%2F_Ön_Yazı_Üretici-339933?style=flat-square"/></a>
-  <a href="https://github.com/canogluy06-byte/php-corporate-website"><img src="https://img.shields.io/badge/🏗️_Kurumsal_Web_Sitesi-F7DF1E?style=flat-square"/></a>
+  <a href="https://github.com/canogluy06-byte/php-blog-cms"><img src="https://img.shields.io/badge/Flat--File_Blog_CMS-777BB4?style=flat-square&logo=php&logoColor=white"/></a>
+  <a href="https://github.com/canogluy06-byte/csharp-stock-inventory"><img src="https://img.shields.io/badge/Stok_%26_Ön_Muhasebe-239120?style=flat-square&logo=csharp&logoColor=white"/></a>
+  <a href="https://github.com/canogluy06-byte/job-application-tracker"><img src="https://img.shields.io/badge/Belge_Üretim_Aracı-339933?style=flat-square&logo=node.js&logoColor=white"/></a>
+  <a href="https://github.com/canogluy06-byte/php-corporate-website"><img src="https://img.shields.io/badge/Kurumsal_Web_Sitesi-E34F26?style=flat-square&logo=html5&logoColor=white"/></a>
 </p>
 
 ---
 
-## 📊 İstatistikler
+## Teknoloji yetkinliği
 
 <p align="center">
-  <img src="https://img.shields.io/github/followers/canogluy06-byte?style=for-the-badge&logo=github&label=Takip%C3%A7i&color=F59E0B&labelColor=0D1117"/>
-  <img src="https://img.shields.io/badge/Depo-9-512BD4?style=for-the-badge&logo=github&labelColor=0D1117"/>
-  <img src="https://img.shields.io/badge/Ana%20dil-C%23-239120?style=for-the-badge&logo=csharp&labelColor=0D1117"/>
+  <img src="https://skillicons.dev/icons?i=cs,dotnet,php,js,nodejs,unity,postgres,mysql,git,github,visualstudio,vscode&perline=12" alt="stack"/>
 </p>
 
-<p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=canogluy06-byte&theme=tokyonight&hide_border=true&background=0D1117&ring=F59E0B&fire=F59E0B&currStreakLabel=F59E0B" alt="streak"/>
-</p>
+| Alan | Teknolojiler | Uygulandığı sistem |
+|---|---|---|
+| **Backend** | ASP.NET Core · EF Core · REST · OpenAPI | ERP Suite |
+| **Mimari** | Clean Architecture · DI · katmanlı tasarım | ERP Suite |
+| **Güvenlik** | JWT Bearer · BCrypt · rol bazlı yetkilendirme | ERP Suite |
+| **Veritabanı** | PostgreSQL · MySQL · SQLite · şema migrasyonu | Tümü |
+| **Masaüstü** | WinForms · custom `OnPaint` kontrolleri · tema katmanı | Finans Takip · ERP istemcisi |
+| **Web** | PHP 8 · PDO · vanilla JS · Leaflet | Nearby · Kurumsal site · Blog |
+| **Mobil** | PWA · service worker · Capacitor | Nearby |
+| **Oyun** | Unity · runtime UI üretimi | Idle Music Game |
+| **Operasyon** | Sunucu kurulumu · ağ yapılandırması · yedekleme · dağıtım | ERP Suite |
 
-### Hangi teknolojiyi nerede kullandım
+---
 
-| Teknoloji | Kullandığım proje |
+## Çalışma prensipleri
+
+| | |
 |---|---|
-| **C# / .NET 10** · Clean Architecture · EF Core · JWT | [ERP Suite](https://github.com/canogluy06-byte/dotnet-erp-clean-architecture) |
-| **C# / .NET 8** · WinForms · SQLite · custom `OnPaint` | [Finans Takip](https://github.com/canogluy06-byte/winforms-finance-tracker) · [Stok & Ön Muhasebe](https://github.com/canogluy06-byte/csharp-stock-inventory) |
-| **PHP 8** · MySQL · PDO · Leaflet · PWA | [Nearby](https://github.com/canogluy06-byte/php-venue-discovery-pwa) · [Kurumsal Site](https://github.com/canogluy06-byte/php-corporate-website) · [Blog CMS](https://github.com/canogluy06-byte/php-blog-cms) |
-| **JavaScript** · Node.js · service worker · Capacitor | [CV Üretici](https://github.com/canogluy06-byte/job-application-tracker) · [Nearby mobil](https://github.com/canogluy06-byte/php-venue-discovery-pwa/tree/main/mobile) |
-| **Unity · C#** · runtime UI generation | [Idle Music Game](https://github.com/canogluy06-byte/unity-idle-music-game) |
+| **Gizli bilgi koda girmez** | Kimlik bilgileri ortam değişkenlerinden okunur; depolarda yalnızca `.env.example` bulunur. |
+| **Tek kaynak, çok istemci** | İş kuralı bir kez yazılır; masaüstü, mobil ve web aynı sözleşmeyi tüketir. |
+| **Veri kaybı varsayılan değildir** | Finansal ve operasyonel kayıtlarda yedekleme bir menü öğesi değil, zamanlanmış bir servistir. |
+| **Bağımlılık bilinçli seçilir** | Küçük bir blog için veritabanı sunucusu, kurumsal ERP için ise tam katmanlı mimari. |
 
 ---
 
-## 📫 İletişim
+## İletişim
 
 <p align="center">
-  <a href="mailto:canogluy06@gmail.com"><img src="https://img.shields.io/badge/E--posta-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
-  <a href="https://github.com/canogluy06-byte"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+  <a href="mailto:canogluy06@gmail.com"><img src="https://img.shields.io/badge/E--posta-EA4335?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0D1117"/></a>
+  <a href="https://github.com/canogluy06-byte?tab=repositories"><img src="https://img.shields.io/badge/Tüm_Depolar-181717?style=for-the-badge&logo=github&logoColor=white&labelColor=0D1117"/></a>
+  <img src="https://img.shields.io/github/followers/canogluy06-byte?style=for-the-badge&logo=github&label=Takipçi&color=512BD4&labelColor=0D1117"/>
+  <img src="https://komarev.com/ghpvc/?username=canogluy06-byte&label=Görüntülenme&color=F59E0B&style=for-the-badge"/>
 </p>
 
 <p align="center">
-  <i>Depoların çoğu <b>portfolyo sürümüdür</b> — gerçek müşteri verisi, kimlik bilgileri ve marka bilgileri kaldırılmış, yerlerine jenerik demo değerleri konmuştur.</i>
-</p>
-
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:F59E0B,50:7B4AE2,100:512BD4&height=110&section=footer" width="100%" alt="footer"/>
+  <sub><i>Depoların çoğu <b>portfolyo sürümüdür</b>. Gerçek müşteri verisi, kimlik bilgileri, personel kayıtları, tedarikçi ve fiyat bilgileri ile marka varlıkları kaldırılmış; yerlerine jenerik demo değerleri konmuştur. Mimari, kod ve arayüz değişmemiştir.</i></sub>
 </p>

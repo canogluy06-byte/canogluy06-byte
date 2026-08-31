@@ -1,0 +1,99 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-label="Yunus Emre Canoglu - Backend and Desktop Systems Developer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#080D18"/>
+      <stop offset="55%"  stop-color="#0D1424"/>
+      <stop offset="100%" stop-color="#131B30"/>
+    </linearGradient>
+
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#512BD4"/>
+      <stop offset="50%"  stop-color="#7C5CFF"/>
+      <stop offset="100%" stop-color="#F59E0B"/>
+    </linearGradient>
+
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#7C5CFF" stop-opacity="0"/>
+      <stop offset="50%"  stop-color="#7C5CFF" stop-opacity="0.55"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#7C5CFF" stroke-opacity="0.07" stroke-width="1"/>
+    </pattern>
+
+    <linearGradient id="fade" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%"   stop-color="#fff" stop-opacity="0.85"/>
+      <stop offset="70%"  stop-color="#fff" stop-opacity="0.25"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="gridMask"><rect width="1200" height="280" fill="url(#fade)"/></mask>
+
+    <clipPath id="frame"><rect width="1200" height="280" rx="10"/></clipPath>
+  </defs>
+
+  <g clip-path="url(#frame)">
+    <rect width="1200" height="280" fill="url(#bg)"/>
+    <rect width="1200" height="280" fill="url(#grid)" mask="url(#gridMask)"/>
+
+    <!-- yumusak isik havuzlari -->
+    <circle cx="150" cy="60" r="230" fill="#512BD4" opacity="0.13"/>
+    <circle cx="1080" cy="250" r="200" fill="#F59E0B" opacity="0.07"/>
+
+    <!-- yatay tarama cizgisi -->
+    <rect x="-460" y="0" width="460" height="280" fill="url(#sweep)" opacity="0.5">
+      <animate attributeName="x" from="-460" to="1200" dur="7s" repeatCount="indefinite"/>
+    </rect>
+
+    <!-- devre hatlari -->
+    <g stroke="#7C5CFF" stroke-opacity="0.30" fill="none" stroke-width="1.4">
+      <path d="M0 214 H196 L226 184 H408"/>
+      <path d="M792 236 H962 L992 206 H1200"/>
+      <path d="M868 54 H1010 L1040 84 H1200"/>
+    </g>
+    <g fill="#F59E0B">
+      <circle cx="226" cy="184" r="3.2"><animate attributeName="opacity" values="0.25;1;0.25" dur="2.6s" repeatCount="indefinite"/></circle>
+      <circle cx="992" cy="206" r="3.2"><animate attributeName="opacity" values="1;0.25;1" dur="3.2s" repeatCount="indefinite"/></circle>
+      <circle cx="1040" cy="84"  r="3.2"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.1s" repeatCount="indefinite"/></circle>
+    </g>
+
+    <!-- ust vurgu seridi -->
+    <rect x="0" y="0" width="1200" height="3" fill="url(#accent)"/>
+
+    <!-- isim -->
+    <text x="72" y="118" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif"
+          font-size="50" font-weight="700" fill="#F2F5FA" letter-spacing="1.2">
+      YUNUS EMRE CANOĞLU
+    </text>
+
+    <!-- ceyrek cizgi -->
+    <rect x="74" y="140" width="0" height="3" rx="1.5" fill="url(#accent)">
+      <animate attributeName="width" from="0" to="330" dur="1.5s" fill="freeze"/>
+    </rect>
+
+    <!-- unvan -->
+    <text x="74" y="180" font-family="Segoe UI, Helvetica Neue, Arial, sans-serif"
+          font-size="21" font-weight="600" fill="#B9C4D6" letter-spacing="2.4">
+      BACKEND &amp; DESKTOP SYSTEMS DEVELOPER
+    </text>
+
+    <!-- teknoloji satiri -->
+    <text x="74" y="222" font-family="Consolas, SF Mono, Menlo, monospace"
+          font-size="16" fill="#7C5CFF" letter-spacing="1">
+      .NET 10<tspan fill="#43506B">  ·  </tspan><tspan fill="#8B7BFF">Clean Architecture</tspan><tspan fill="#43506B">  ·  </tspan><tspan fill="#F59E0B">PostgreSQL</tspan><tspan fill="#43506B">  ·  </tspan><tspan fill="#8B7BFF">PHP</tspan><tspan fill="#43506B">  ·  </tspan><tspan fill="#F59E0B">Unity</tspan>
+    </text>
+
+    <!-- sag ust durum rozeti -->
+    <g transform="translate(966,44)">
+      <rect x="0" y="0" width="182" height="34" rx="17" fill="#0E1729" stroke="#243049" stroke-width="1"/>
+      <circle cx="21" cy="17" r="5" fill="#22C55E">
+        <animate attributeName="opacity" values="1;0.3;1" dur="2s" repeatCount="indefinite"/>
+      </circle>
+      <text x="37" y="22" font-family="Segoe UI, Arial, sans-serif" font-size="13"
+            font-weight="600" fill="#9FB0C9" letter-spacing="0.4">PRODUCTION SYSTEMS</text>
+    </g>
+
+    <!-- alt vurgu seridi -->
+    <rect x="0" y="277" width="1200" height="3" fill="url(#accent)" opacity="0.65"/>
+  </g>
+</svg>
