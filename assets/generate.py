@@ -11,7 +11,7 @@ statik onizleme) her sey tam ve dogru gorunur.
 """
 import os
 
-OUT = r"C:\Users\HP\Desktop\_github_portfolio\canogluy06-byte\assets"
+OUT = os.path.dirname(os.path.abspath(__file__))
 os.makedirs(OUT, exist_ok=True)
 
 DARK = dict(
@@ -276,5 +276,5 @@ if __name__ == "__main__":
         for sfx, tok in (("dark", DARK), ("light", LIGHT)):
             p = os.path.join(OUT, f"profile-{name}-{sfx}.svg")
             open(p, "w", encoding="utf-8", newline="\n").write(fn(tok))
-            print(f"  {name}-{sfx}.svg  {os.path.getsize(p)//1024} KB")
+            print(f"  profile-{name}-{sfx}.svg  {os.path.getsize(p)//1024} KB")
     print("\n6 varlik uretildi — taban durum gorunur, animasyon yalnizca ekler")
