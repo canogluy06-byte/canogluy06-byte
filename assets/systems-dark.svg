@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="500" viewBox="0 0 1200 500"
+     role="img" aria-label="Sistem mimarisi: tek API, üç istemci">
+  <defs>
+    <style>
+    .rev  { animation: rev .5s cubic-bezier(.2,.7,.3,1) forwards; }
+    .draw { animation: draw 1.2s cubic-bezier(.2,.7,.2,1) forwards .2s; }
+    .blink{ animation: blink 2.4s ease-in-out infinite; }
+    .sweep{ animation: sweep 11s linear infinite; }
+    @keyframes rev   { from { opacity:.001; transform:translateY(7px) }
+                       to   { opacity:1;    transform:none } }
+    @keyframes draw  { from { width:0 } to { width:var(--w) } }
+    @keyframes blink { 0%,100% { opacity:1 } 50% { opacity:.25 } }
+    @keyframes sweep { from { transform:translateX(-520px) } to { transform:translateX(1200px) } }
+    @media (prefers-reduced-motion: reduce) {
+      .rev,.draw,.blink,.sweep { animation: none }
+    }
+</style>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7C5CFF"/><stop offset="55%" stop-color="#7C5CFF"/>
+      <stop offset="100%" stop-color="#F5A524"/>
+    </linearGradient>
+    <linearGradient id="sw" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#7C5CFF" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#7C5CFF" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#7C5CFF" stroke-opacity="0.055" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="gf" x1="0" y1="0" x2="1" y2="0.35">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="62%" stop-color="#fff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="gm"><rect width="100%" height="100%" fill="url(#gf)"/></mask>
+    <radialGradient id="gV"><stop offset="0%" stop-color="#7C5CFF" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#7C5CFF" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gA"><stop offset="0%" stop-color="#F5A524" stop-opacity="0.09"/>
+      <stop offset="100%" stop-color="#F5A524" stop-opacity="0"/></radialGradient>
+    <marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="5.5" markerHeight="5.5" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 z" fill="#7C5CFF" opacity="0.6"/>
+    </marker>
+    <clipPath id="fr"><rect width="1200" height="500" rx="12"/></clipPath>
+  </defs>
+  <g clip-path="url(#fr)">
+    <rect width="1200" height="500" fill="#06080D"/>
+    <rect width="1200" height="500" fill="url(#grid)" mask="url(#gm)"/>
+    <ellipse cx="600" cy="500" rx="620" ry="230" fill="url(#gV)"/>
+    <rect x="0" y="0" width="1200" height="2.5" fill="url(#edge)"/>
+
+    <text class="rev" x="64" y="54" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="19" font-weight="700" fill="#EDF1F7">Tek API, üç istemci</text>
+    <text class="rev" style="animation-delay:.06s" x="64" y="78" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="11"
+          fill="#6C7A8E" letter-spacing="1.1">BAĞIMLILIKLAR İÇERİ DOĞRU AKAR — İŞ KURALI TEK YERDE DURUR</text>
+
+    <text x="64" y="150" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="10.5" fill="#6C7A8E" letter-spacing="2">İSTEMCİ</text>
+    <text x="64" y="264" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="10.5" fill="#6C7A8E" letter-spacing="2">SUNUCU</text>
+    <g><rect x="244" y="112" width="200" height="64" rx="9" fill="#0A0E16" stroke="#F5A524" stroke-width="1.2"/><text x="344.0" y="138" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#EDF1F7" text-anchor="middle">WinForms</text><text x="344.0" y="157" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="10.5" fill="#6C7A8E" text-anchor="middle">masaüstü</text></g><g><rect x="500" y="112" width="200" height="64" rx="9" fill="#0A0E16" stroke="#F5A524" stroke-width="1.2"/><text x="600.0" y="138" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#EDF1F7" text-anchor="middle">PWA</text><text x="600.0" y="157" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="10.5" fill="#6C7A8E" text-anchor="middle">mobil</text></g><g><rect x="756" y="112" width="200" height="64" rx="9" fill="#0A0E16" stroke="#F5A524" stroke-width="1.2"/><text x="856.0" y="138" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#EDF1F7" text-anchor="middle">Tarayıcı</text><text x="856.0" y="157" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="10.5" fill="#6C7A8E" text-anchor="middle">web</text></g><path d="M344 176 L600 226" stroke="#7C5CFF" stroke-width="1.4" fill="none" opacity="0.5" marker-end="url(#ah)"/><path d="M600 176 L600 226" stroke="#7C5CFF" stroke-width="1.4" fill="none" opacity="0.5" marker-end="url(#ah)"/><path d="M856 176 L600 226" stroke="#7C5CFF" stroke-width="1.4" fill="none" opacity="0.5" marker-end="url(#ah)"/><g><rect x="360" y="232" width="480" height="52" rx="9" fill="#0A0E16" stroke="#7C5CFF" stroke-width="1.2"/><text x="600.0" y="258" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#EDF1F7" text-anchor="middle">ASP.NET Core API</text><text x="600.0" y="277" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="10.5" fill="#6C7A8E" text-anchor="middle">20 REST controller</text></g><g><rect x="360" y="312" width="480" height="52" rx="9" fill="#0A0E16" stroke="#1C2434" stroke-width="1.2"/><text x="600.0" y="338" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#EDF1F7" text-anchor="middle">Application</text><text x="600.0" y="357" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="10.5" fill="#6C7A8E" text-anchor="middle">DTO · use-case sözleşmeleri</text></g><g><rect x="360" y="392" width="480" height="52" rx="9" fill="#0A0E16" stroke="#7C5CFF" stroke-width="1.2"/><text x="600.0" y="418" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#EDF1F7" text-anchor="middle">Domain</text><text x="600.0" y="437" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="10.5" fill="#6C7A8E" text-anchor="middle">20 entity · sıfır bağımlılık</text></g><path d="M600 284 L600 310" stroke="#7C5CFF" stroke-width="1.4" fill="none" opacity="0.5" marker-end="url(#ah)"/><path d="M600 364 L600 390" stroke="#7C5CFF" stroke-width="1.4" fill="none" opacity="0.5" marker-end="url(#ah)"/><g><rect x="898" y="312" width="212" height="52" rx="9" fill="#0A0E16" stroke="#1C2434" stroke-width="1.2" stroke-dasharray="4 3"/><text x="1004.0" y="338" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="14.5" font-weight="600" fill="#EDF1F7" text-anchor="middle">Infrastructure</text><text x="1004.0" y="357" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="10.5" fill="#6C7A8E" text-anchor="middle">EF Core · JWT · BCrypt</text></g><path d="M896 338 L844 338" stroke="#7C5CFF" stroke-width="1.4" fill="none" opacity="0.5" marker-end="url(#ah)" stroke-dasharray="5 4"/>
+    <path d="M600 444 L600 466" stroke="#7C5CFF" stroke-width="1.4" fill="none" opacity="0.5" marker-end="url(#ah)"/>
+    <text x="600" y="486" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="11.5"
+          fill="#F5A524" text-anchor="middle" letter-spacing="1.6">PostgreSQL</text>
+  </g>
+</svg>

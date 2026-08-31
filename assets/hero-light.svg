@@ -1,0 +1,100 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="330" viewBox="0 0 1200 330"
+     role="img" aria-label="Yunus Emre Canoğlu — Kurumsal iş yazılımı, backend ve masaüstü sistemleri">
+  <defs>
+    <style>
+    .rev  { animation: rev .5s cubic-bezier(.2,.7,.3,1) forwards; }
+    .draw { animation: draw 1.2s cubic-bezier(.2,.7,.2,1) forwards .2s; }
+    .blink{ animation: blink 2.4s ease-in-out infinite; }
+    .sweep{ animation: sweep 11s linear infinite; }
+    @keyframes rev   { from { opacity:.001; transform:translateY(7px) }
+                       to   { opacity:1;    transform:none } }
+    @keyframes draw  { from { width:0 } to { width:var(--w) } }
+    @keyframes blink { 0%,100% { opacity:1 } 50% { opacity:.25 } }
+    @keyframes sweep { from { transform:translateX(-520px) } to { transform:translateX(1200px) } }
+    @media (prefers-reduced-motion: reduce) {
+      .rev,.draw,.blink,.sweep { animation: none }
+    }
+</style>
+    <linearGradient id="edge" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5B3BE0"/><stop offset="55%" stop-color="#5B3BE0"/>
+      <stop offset="100%" stop-color="#B87400"/>
+    </linearGradient>
+    <linearGradient id="sw" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5B3BE0" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#5B3BE0" stop-opacity="0.26"/>
+      <stop offset="100%" stop-color="#5B3BE0" stop-opacity="0"/>
+    </linearGradient>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M32 0H0V32" fill="none" stroke="#5B3BE0" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="gf" x1="0" y1="0" x2="1" y2="0.35">
+      <stop offset="0%" stop-color="#fff" stop-opacity="0.9"/>
+      <stop offset="62%" stop-color="#fff" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <mask id="gm"><rect width="100%" height="100%" fill="url(#gf)"/></mask>
+    <radialGradient id="gV"><stop offset="0%" stop-color="#5B3BE0" stop-opacity="0.07"/>
+      <stop offset="100%" stop-color="#5B3BE0" stop-opacity="0"/></radialGradient>
+    <radialGradient id="gA"><stop offset="0%" stop-color="#B87400" stop-opacity="0.05"/>
+      <stop offset="100%" stop-color="#B87400" stop-opacity="0"/></radialGradient><clipPath id="fr"><rect width="1200" height="330" rx="12"/></clipPath></defs>
+  <g clip-path="url(#fr)">
+    <rect width="1200" height="330" fill="#FFFFFF"/>
+    <rect width="1200" height="330" fill="url(#grid)" mask="url(#gm)"/>
+    <ellipse cx="110" cy="20" rx="520" ry="330" fill="url(#gV)"/>
+    <ellipse cx="1130" cy="330" rx="430" ry="270" fill="url(#gA)"/>
+    <rect class="sweep" x="0" y="0" width="520" height="330" fill="url(#sw)"/>
+    <rect x="0" y="0" width="1200" height="2.5" fill="url(#edge)"/>
+
+    <text class="rev" x="76" y="74" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="11.5" fill="#66748A"
+          letter-spacing="3.4">YAZILIM MÜHENDİSLİĞİ &#160;·&#160; ANKARA, TÜRKİYE</text>
+
+    <text class="rev" style="animation-delay:.08s" x="74" y="144" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif"
+          font-size="52" font-weight="700" fill="#0A0F1A" letter-spacing="-0.3">YUNUS EMRE CANOĞLU</text>
+
+    <rect class="draw" style="--w:286px" x="76" y="164" width="286" height="2.5" rx="1.25" fill="url(#edge)"/>
+
+    <text class="rev" style="animation-delay:.16s" x="76" y="204" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="18"
+          font-weight="600" fill="#465365" letter-spacing="1.6">Kurumsal iş yazılımı &#160;·&#160; Backend, masaüstü ve saha sistemleri</text>
+
+    <text class="rev" style="animation-delay:.24s" x="76" y="248" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="14" letter-spacing="0.3">
+      <tspan fill="#5B3BE0">.NET 10</tspan><tspan fill="#66748A">  /  </tspan><tspan
+       fill="#465365">Clean Architecture</tspan><tspan fill="#66748A">  /  </tspan><tspan
+       fill="#B87400">PostgreSQL</tspan><tspan fill="#66748A">  /  </tspan><tspan
+       fill="#465365">PHP 8</tspan><tspan fill="#66748A">  /  </tspan><tspan fill="#5B3BE0">Unity</tspan>
+    </text>
+
+    <g class="rev" style="animation-delay:.32s" transform="translate(76,286)">
+      <circle class="blink" cx="5" cy="-4" r="4.5" fill="#0E9F6E"/>
+      <text x="20" y="0" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="12" fill="#66748A" letter-spacing="1.5">
+        SAHADA ÇALIŞAN SİSTEMLER &#160;—&#160; PROTOTİP DEĞİL</text>
+    </g>
+
+    <g class="rev" style="animation-delay:.4s" transform="translate(872,60)">
+      <rect x="0" y="0" width="264" height="212" rx="10" fill="#F7F9FC" stroke="#DBE2EC" stroke-width="1"/>
+      <rect x="0" y="0" width="264" height="2" rx="1" fill="url(#edge)" opacity="0.9"/>
+      <text x="22" y="38" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="10.5" fill="#66748A" letter-spacing="2.4">ÖLÇÜMLER</text>
+      <line x1="22" y1="52" x2="242" y2="52" stroke="#DBE2EC" stroke-width="1"/>
+      
+      <g class="rev" style="animation-delay:0.50s">
+        <text x="22" y="84" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#66748A" letter-spacing="1.4">ÜRETİMDEKİ SİSTEM</text>
+        <text x="242" y="85" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="19" font-weight="600"
+              fill="#0A0F1A" text-anchor="end">9</text>
+        <line x1="22" y1="98" x2="242" y2="98" stroke="#DBE2EC" stroke-width="1"/>
+      </g>
+      <g class="rev" style="animation-delay:0.60s">
+        <text x="22" y="126" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#66748A" letter-spacing="1.4">GÜNLÜK İSTEMCİ</text>
+        <text x="242" y="127" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="19" font-weight="600"
+              fill="#0A0F1A" text-anchor="end">~10</text>
+        <line x1="22" y1="140" x2="242" y2="140" stroke="#DBE2EC" stroke-width="1"/>
+      </g>
+      <g class="rev" style="animation-delay:0.70s">
+        <text x="22" y="168" font-family="Segoe UI, -apple-system, BlinkMacSystemFont, Helvetica Neue, Arial, sans-serif" font-size="11" fill="#66748A" letter-spacing="1.4">REST UÇ NOKTASI</text>
+        <text x="242" y="169" font-family="ui-monospace, SFMono-Regular, Consolas, Menlo, monospace" font-size="19" font-weight="600"
+              fill="#0A0F1A" text-anchor="end">20</text>
+        <line x1="22" y1="182" x2="242" y2="182" stroke="#DBE2EC" stroke-width="1"/>
+      </g>
+    </g>
+
+    <rect x="0" y="328" width="1200" height="2" fill="url(#edge)" opacity="0.45"/>
+  </g>
+</svg>
